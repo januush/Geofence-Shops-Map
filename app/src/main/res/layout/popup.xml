@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_id"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:textSize="18sp"
+                android:textStyle="italic"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/enter_item"/>
+
+            <EditText
+                android:id="@+id/shopItem"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:hint="@string/hint_item"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/shopDescription"
+                android:layout_below="@id/shopItem"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:hint="@string/quantity_item"
+
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/shopRange"
+                android:layout_below="@id/shopDescription"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:hint="@string/range"
+
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_below="@id/shopRange"
+                android:text="@string/save_title"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
